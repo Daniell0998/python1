@@ -6,20 +6,20 @@ print ("Hola", nombre, "me alegro de conocerle",nombre)
 #2
 print ("Dime tu nombre")
 nombre=input()
-print ( nombre.upper," tu nombre tiene", nombre.len, "caracteres")
+print ( nombre.upper()," tu nombre tiene", len(nombre), "caracteres")
 
 #3
 print ("Dime el numero en el que quieres para de contar numeros pares.")
-numero=input()
+numero=int(input()) 
 i=2
 while i<numero:
     print (i)
     i+=2
 #4
 print ("Dime tu peso")
-peso=input()
+peso=int(input()) 
 print ("Dime tu altura")
-altura= input
+altura= float(input()) 
 resul =peso/altura
 rounded_number = round(resul, 2)
 print ("Tu indice de masa corporal es" ,rounded_number )
@@ -30,7 +30,7 @@ numeroA= random.randint(2,10)
 numeroB=random.randint(2,10)
 resul =numeroA*numeroB
 print ("Dime el rultado de la siguiente multiplicacion", numeroA, "X", numeroB) 
-numeroRespondido=input()
+numeroRespondido= int (input())
 if resul==numeroRespondido:
     print ("Has acertado")
 else:
